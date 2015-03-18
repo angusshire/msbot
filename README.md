@@ -1,5 +1,5 @@
 # msbot <img src="https://github.com/4148/msbot/blob/master/images/msbotgui.ico" width="3%" height="3%"/>
-Gaming bot for MS v62. Previous bots suffered from the fact that keyboard input must be sent to the game window with focus. This bot solves that problem by sending keystrokes to the game window in the background.
+This is a gaming bot for the MMORPG MapleStory v62. Previous bots suffered from the fact that keyboard input must be sent to the foreground window (the window with focus). This bot solves that problem by sending keystrokes to the game window in the background.
 
 A view of the bot:
 
