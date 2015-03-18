@@ -1,4 +1,4 @@
-# msbot <img src="https://github.com/4148/msbot/blob/master/images/msbotgui.ico" width="200%" height="200%"/>
+# msbot <img src="https://github.com/4148/msbot/blob/master/images/msbotgui.ico" width="100%" height="100%"/>
 Gaming bot for MS v62. Previous bots suffered from the fact that keyboard input must be sent to the game window with focus. This bot solves that problem by sending keystrokes to the game window in the background.
 
 A view of the bot:
