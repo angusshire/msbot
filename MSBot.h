@@ -1,3 +1,6 @@
+// Copyright (c) 2014 Angus H. (4148)
+// Distributed under the GNU General Public License v3.0 (GPLv3).
+
 // header file for MSBot.cpp
 
 #ifndef WINVER
@@ -85,7 +88,7 @@ private:
 	static const int MINIMAP_MINIMIZE_PLUS = 14;
 	static const int MINIMAP_BOTTOM = 15;
 	// KEYS
-	static const DWORD HP_KEY = 0x00530000; // DEL key; forgot a zero at the end -.-
+	static const DWORD HP_KEY = 0x00530000; // DEL key
 	static const DWORD MP_KEY = 0x004F0000; // END key
 	static const DWORD ATTACK_KEY = 0x001D0000; // CTRL key
 	static const DWORD LOOT_KEY = 0x002C0000; // Z key
