@@ -14,6 +14,12 @@ using namespace std;
 class Image {
 private:
 	// indicates orientation of image; e.g., if BOTTOM_UP, scanline begins at bottom row of image
+	// In Windows, device-independent bitmaps (DIBs) can be placed in memory in two different
+	// orientations - bottom-up and top-down. In a bottom-up orientation, the buffer that holds 
+	// the image data begins first with the bottom-left pixel of the image, and then ends with 
+	// the upper-right pixel; each row of pixels in the image is stored in the buffer from left
+	// to right, starting with the bottom row. A top-down orientation is the converse of bottom-up: 
+	// each row of pixels in the image is stored in the buffer from left to right, starting with the top row.
 	// default ORIENTATION: BOTTOM_UP
 	int orientation; // initialized in constructor's initialization list
 	// holds internal BITMAP, which contains BMBITS, the bits of the pixels of the image
