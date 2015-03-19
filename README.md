@@ -9,6 +9,8 @@ A view of the bot:
 
 As shown, the bot supports features like autologin, autopot, and autoCC. This was done by simply capturing the game window into a BMP file and parsing it accordingly. Because of this dependence the result is not guaranteed to work in other versions of the game. All the bot features use the `PostMessage` Win32 API function call to send keystrokes to the background window.
 
+Image recognition is done by calculating the squared euclidean distance (SED) with both the snapshot image and corresponding template. If the SED is below a certain threshold, then it matches the template, and the bot takes an action accordingly.
+
 
 ### How to Use
 To use, download the latest release and run the executable. Since the bot uses the resources in the `images` folder to parse game snapshots, do not modify anything inside that folder.
