@@ -3,11 +3,11 @@ msbot is a game bot for the MMORPG MapleStory v62. Previous bots only allowed ke
 
 A view of the bot:
 
-<img src="https://raw.github.com/4148/msbot/master/msbot.png"/>
+<p alt='center'><img src="https://raw.github.com/4148/msbot/master/msbot.png" width="50%" height='50%'></p>
 
 ### How it Works
 
-As shown, the bot supports features like autologin, autopot, and autoCC. This was done by simply capturing the game window into a BMP file and parsing it accordingly. Because of this dependence the result is not guaranteed to work in other versions of the game. All the bot features use the `PostMessage` Win32 API function call to send keystrokes to the background window.
+As shown in the image above, the bot supports features like autologin, autopot, and autoCC. This was done by simply capturing the game window into a BMP file and parsing it accordingly. Because of this dependence the result is not guaranteed to work in other versions of the game. All the bot features use the `PostMessage` Win32 API function call to send keystrokes to the background window.
 
 Image recognition is done by calculating the squared euclidean distance (SED) using the RGB pixels of the snapshot image and corresponding template. If the SED is below a certain threshold, then it matches the template, and the bot takes an action accordingly.
 
