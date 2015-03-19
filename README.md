@@ -3,7 +3,7 @@ msbot is a game bot for the MMORPG MapleStory v62. Previous bots only allowed ke
 
 A view of the bot:
 
-<p alihn='center'><img src="https://raw.github.com/4148/msbot/master/msbot.png" width=".250%" height='.250%'></p>
+<p align='center' height="50%" width="50%"><img src="https://raw.github.com/4148/msbot/master/msbot.png"/></p>
 
 ### How it Works
 
