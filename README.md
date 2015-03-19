@@ -1,4 +1,4 @@
-# msbot <img src="https://github.com/4148/msbot/blob/master/images/msbotgui.ico" width=2"%" height="2%"/>
+# msbot
 msbot is a game bot for the MMORPG MapleStory v62. Previous bots only allowed keyboard input to be sent to the foreground window (the window with focus). This bot solves that problem by being able to send keystrokes to the window in the background.
 
 A view of the bot:
@@ -11,7 +11,6 @@ As shown, the bot supports features like autologin, autopot, and autoCC. This wa
 
 
 ### How to Use
-
 To use, download the latest release and run the executable. Since the bot uses the resources in the `images` folder to parse game snapshots, do not modify anything inside that folder.
 
 ### Platforms
