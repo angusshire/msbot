@@ -13,6 +13,8 @@ As shown, the bot supports features like autologin, autopot, and autoCC. This wa
 ### How to Use
 To use, download the latest release and run the executable. Since the bot uses the resources in the `images` folder to parse game snapshots, do not modify anything inside that folder.
 
+From there, usage is intuitive: simply check the checkboxes corresponding to the desired functionality. 
+
 ### Platforms
 This bot works on Windows 7 64-bit. It likely works for other versions of Windows. 
 
