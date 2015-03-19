@@ -11,6 +11,7 @@ As shown in the image above, the bot supports features like autologin, autopot, 
 
 Image recognition is done by calculating the squared euclidean distance (SED) using the RGB pixels of the snapshot image and corresponding template. If the SED is below a certain threshold, then it matches the template, and the bot takes an action accordingly.
 
+In Windows, device-independent bitmaps (DIBs) can be placed in memory in two different orientations - bottom-up and top-down. In a bottom-up orientation, the buffer that holds the image data begins first with the bottom-left pixel of the image, and then ends with the upper-right pixel; each row of pixels in the image is stored in the buffer from left to right, starting with the bottom row. A top-down orientation is the converse of bottom-up: each row of pixels in the image is stored in the buffer from left to right, starting with the top row.
 
 ### How to Use
 To use, download the latest release and run the executable. Since the bot uses the resources in the `images` folder to parse game snapshots, do not modify anything inside that folder.
