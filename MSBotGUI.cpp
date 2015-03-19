@@ -116,7 +116,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 			GetOpenFileName(&ofn);
 			ifstream* filedata = new ifstream;
 			filedata->open(ofn.lpstrFile); // works on this compiler for wstring paths as well
-			SetWindowText(subwindows[SPAM_TEXT], L"[USING FILE UPLOAD FOR SPAM, DO NOT FOCUS THIS TEXTBOX]"); // didn't use Dlg version because too lazy to create resource file
+			SetWindowText(subwindows[SPAM_TEXT], L"[USING FILE UPLOAD FOR SPAM, DO NOT FOCUS THIS TEXTBOX]");
 			bot.useSpamFile(true, filedata); // since filedata is dynamic, must delete it
 		} else if (((HWND) lParam) == subwindows[AUTOLOGIN]) {
 			if (SendMessage(subwindows[AUTOLOGIN], BM_GETCHECK, 0, 0) == BST_CHECKED) { // how IsDlgButtonChecked() works underneath
@@ -199,7 +199,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 				y_offset -= 20; // just some formatting idiosyncrasies
 			} else if (i == COPYRIGHT) {
 				// makeintresource(...) returns string that is what the documentation refers to as the name of the resource
-				HWND noob = CreateWindowEx(WS_EX_TOPMOST, L"STATIC", NULL, WS_VISIBLE | WS_CHILD | SS_BITMAP | SS_CENTERIMAGE, 65, y_offset, 80, 64, hwnd, NULL, GetModuleHandle(NULL), NULL); // halts exec. when 3rd arg. is MAKEINTRESOURCE(IDB_NOOB), don't know why
+				HWND noob = CreateWindowEx(WS_EX_TOPMOST, L"STATIC", NULL, WS_VISIBLE | WS_CHILD | SS_BITMAP | SS_CENTERIMAGE, 65, y_offset, 80, 64, hwnd, NULL, GetModuleHandle(NULL), NULL);
 				HBITMAP hBmp = (HBITMAP) LoadImage(NULL, L"images\\noob.bmp", IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE);
 				SendMessage(noob, STM_SETIMAGE, IMAGE_BITMAP, (LPARAM) hBmp); // re-sets the image to specified image
 				temp = CreateWindowEx(0, L"STATIC", L"Version: 0.1 \n Author: 4148 \n All rights reserved", WS_VISIBLE | SS_CENTER | WS_CHILD, 10, y_offset+=70, 200, 100, hwnd, NULL, NULL, NULL);
